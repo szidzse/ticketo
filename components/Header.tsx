@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import SearchBar from "@/components/SearchBar";
 
 const Header = () => {
   return (
@@ -32,6 +33,10 @@ const Header = () => {
               </SignInButton>
             </SignedOut>
           </div>
+        </div>
+
+        <div className="w-full lg:max-w-2xl">
+          <SearchBar />
         </div>
       </div>
     </div>
