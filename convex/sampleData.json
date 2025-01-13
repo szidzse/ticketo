@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Elon Musk: Future Vision",
+    "description": "An inspiring talk about technology and humanity's future.",
+    "price": 499.99,
+    "totalTickets": 100,
+    "location": "Silicon Valley Convention Center, California",
+    "eventDate": 1723845600000,
+    "userId": "user_2bFMHkGxZPWVVyJ5QEJQxfsCkxB"
+  },
+  {
+    "name": "FIFA World Cup 2026 - Opening Match",
+    "description": "Experience the thrill of the world's biggest soccer event!",
+    "price": 899.99,
+    "totalTickets": 50,
+    "location": "Estadio Azteca, Mexico City",
+    "eventDate": 1717891200000,
+    "userId": "user_2bFMHkGxZPWVVyJ5QEJQxfsCkxB"
+  },
+  {
+    "name": "Van Gogh Immersive Experience",
+    "description": "Step into the world of Van Gogh with this immersive art exhibition.",
+    "price": 299.99,
+    "totalTickets": 75,
+    "location": "The Art Center, Amsterdam",
+    "eventDate": 1721788200000,
+    "userId": "user_2dOPKmMyZRXXazL7SGLSzhsEmzD"
+  },
+  {
+    "name": "Arctic Monkeys Live",
+    "description": "Join the Arctic Monkeys for an electrifying live performance!",
+    "price": 150.00,
+    "totalTickets": 200,
+    "location": "O2 Arena, London",
+    "eventDate": 1726012800000,
+    "userId": "user_2dOPKmMyZRXXazL7SGLSzhsEmzD"
+  },
+  {
+    "name": "Game Dev Con 2024",
+    "description": "The ultimate convention for game developers and enthusiasts!",
+    "price": 85.00,
+    "totalTickets": 1000,
+    "location": "San Diego Convention Center, California",
+    "eventDate": 1728172800000,
+    "userId": "user_2dOPKmMyZRXXazL7SGLSzhsEmzD"
+  },
+  {
+    "name": "Billie Eilish: World Tour",
+    "description": "An intimate performance with Billie Eilish on her world tour.",
+    "price": 125.00,
+    "totalTickets": 150,
+    "location": "Barclays Center, New York",
+    "eventDate": 1729382400000,
+    "userId": "user_2eRTLnPxYQWWbzM8THMTaisFnzE"
+  },
+  {
+    "name": "Formula 1 Grand Prix - Silverstone",
+    "description": "Witness high-speed racing at the iconic Silverstone circuit.",
+    "price": 199.99,
+    "totalTickets": 60,
+    "location": "Silverstone Circuit, Northamptonshire",
+    "eventDate": 1722393600000,
+    "userId": "user_2fQUMpNzXSVVczN9UINUbjsGozF"
+  },
+  {
+    "name": "Cirque du Soleil: Mystère",
+    "description": "A breathtaking acrobatic show that defies gravity and logic.",
+    "price": 450.00,
+    "totalTickets": 80,
+    "location": "Treasure Island Hotel, Las Vegas",
+    "eventDate": 1724985600000,
+    "userId": "user_2gPVNqOyYTWWdzO0VJOVcktHpzG"
+  },
+  {
+    "name": "The Royal Opera: La Traviata",
+    "description": "A stunning performance of one of the world's most beloved operas.",
+    "price": 750.00,
+    "totalTickets": 40,
+    "location": "Royal Opera House, London",
+    "eventDate": 1720578600000,
+    "userId": "user_2hQWOrPzZUXXezP1WKPWdluIqzH"
+  },
+  {
+    "name": "Shakespeare's Globe: Macbeth",
+    "description": "A powerful and chilling performance of Shakespeare's tragedy.",
+    "price": 175.00,
+    "totalTickets": 100,
+    "location": "Globe Theatre, London",
+    "eventDate": 1727222400000,
+    "userId": "user_2iRXPsQAaVYYfAQ2XLQXemvJrzI"
+  }
+]
