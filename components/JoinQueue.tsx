@@ -63,7 +63,7 @@ const JoinQueue = ({
         console.error("Error joining waiting list: ", error);
         toast({
           variant: "destructive",
-          title: "Uh oh! Something went wrong.",
+          title: "Something went wrong.",
           description: "Failed to join queue. Please try again later.",
         });
       }

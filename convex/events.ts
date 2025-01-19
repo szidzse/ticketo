@@ -150,7 +150,7 @@ export const joinWaitingList = mutation({
 
     // Check if event exists
     const event = await ctx.db.get(eventId);
-    if (event) {
+    if (!event) {
       throw new Error("Event not found.");
     }
 
