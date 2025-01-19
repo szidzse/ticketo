@@ -1,4 +1,4 @@
-import { query } from "@/convex/_generated/server";
+import { mutation, query } from "@/convex/_generated/server";
 import { v } from "convex/values";
 import { WAITING_LIST_STATUS } from "@/convex/constants";
 
@@ -41,5 +41,29 @@ export const getQueuePosition = query({
       ...entry,
       position: peopleAhead + 1,
     };
+  },
+});
+
+// This function invalidates a ticket offer and marks the entry as expired,
+// It processes the queue to offer the ticket to the next person.
+export const releaseTicket = mutation({
+  args: {
+    eventId: v.id("events"),
+    waitingListId: v.id("waitingList"),
+  },
+  handler: async (ctx, { eventId, waitingListId }) => {
+    const entry = await ctx.db.get(waitingListId);
+
+    if (!entry || entry.status !== WAITING_LIST_STATUS.OFFERED) {
+      throw new Error("No valid ticket offer found.");
+    }
+
+    // Mark the entry as expired
+    await ctx.db.patch(waitingListId, {
+      status: WAITING_LIST_STATUS.EXPIRED,
+    });
+
+    // TODO: Process queue to offer ticket to next person
+    //await processQueue(ctx, { eventId });
   },
 });
