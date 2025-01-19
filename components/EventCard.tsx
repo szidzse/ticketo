@@ -5,6 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { api } from "@/convex/_generated/api";
 import { useQuery } from "convex/react";
+import { useStorageUrl } from "@/lib/utils";
 
 const EventCard = ({ eventId }: { eventId: Id<"events"> }) => {
   const { user } = useUser();
@@ -21,6 +22,8 @@ const EventCard = ({ eventId }: { eventId: Id<"events"> }) => {
     eventId,
     userId: user?.id ?? "",
   });
+
+  const imageUrl = useStorageUrl(event?.imageStorageId);
 
   return <div>event card</div>;
 };
