@@ -126,6 +126,11 @@ export const checkAvailability = query({
   },
 });
 
+// This function handles user requests to join the waiting list for an event.
+// Prevents duplicate entries for the same event. Checks if the event exists.
+// If tickets are available, offers a ticket to the user and schedules an expiration for the offer.
+// If no tickets are available, adds the user to the waiting list.
+// Returns the operation's status and success message.
 export const joinWaitingList = mutation({
   args: { eventId: v.id("events"), userId: v.string() },
   handler: async (ctx, { eventId, userId }) => {
@@ -169,6 +174,23 @@ export const joinWaitingList = mutation({
         internal.waitingList.expireOffer,
         { waitingListId, eventId },
       );
+    } else {
+      // If no tickets are available, add to waiting list
+      await ctx.db.insert("waitingList", {
+        eventId,
+        userId,
+        status: WAITING_LIST_STATUS.WAITING,
+      });
     }
+
+    return {
+      success: true,
+      status: available
+        ? WAITING_LIST_STATUS.OFFERED
+        : WAITING_LIST_STATUS.WAITING,
+      message: available
+        ? `Ticket offered - you have ${DURATIONS.TICKET_OFFER / (60 * 1000)} minutes to purchase.`
+        : "Added to waiting list - you'll be notified when a ticket becomes available.",
+    };
   },
 });
