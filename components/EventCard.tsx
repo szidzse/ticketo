@@ -17,6 +17,11 @@ const EventCard = ({ eventId }: { eventId: Id<"events"> }) => {
     userId: user?.id ?? "",
   });
 
+  const queuePosition = useQuery(api.waitingList.getQueuePosition, {
+    eventId,
+    userId: user?.id ?? "",
+  });
+
   return <div>event card</div>;
 };
 

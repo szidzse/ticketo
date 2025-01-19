@@ -19,9 +19,9 @@ export const getById = query({
   },
 });
 
-// Check event availability
+// This function calculates and returns the ticket availability for a specific event.
 // For example, if there are ten tickets in total for an event,
-// eight have already been purchased and two have been offered, then the event will not be available
+// eight have already been purchased and two have been offered, then the event will not be available.
 export const getEventAvailability = query({
   args: { eventId: v.id("events") },
   handler: async (ctx, { eventId }) => {
