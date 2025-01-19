@@ -18,6 +18,7 @@ import {
   Ticket,
   XCircle,
 } from "lucide-react";
+import PurchaseTicket from "@/components/PurchaseTicket";
 
 const EventCard = ({ eventId }: { eventId: Id<"events"> }) => {
   const { user } = useUser();
