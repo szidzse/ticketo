@@ -15,7 +15,6 @@ export type AccountStatus = {
 };
 
 // Retrieves the status of a Stripe Connect account.
-//
 export const getStripeConnectAccountStatus = async (
   stripeAccountId: string,
 ): Promise<AccountStatus> => {
