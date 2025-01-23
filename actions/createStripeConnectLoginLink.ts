@@ -3,7 +3,7 @@
 import { stripe } from "@/lib/stripe";
 
 // Generates a Stripe Connect login link for the specified account ID.
-export const createStipeConnectLoginLink = async (stripeAccountId: string) => {
+export const createStripeConnectLoginLink = async (stripeAccountId: string) => {
   if (!stripeAccountId) {
     throw new Error("No Stripe account ID provided.");
   }
