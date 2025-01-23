@@ -44,4 +44,6 @@ export const createStripeConnectCustomer = async () => {
     userId,
     stripeConnectId: account.id,
   });
+
+  return { account: account.id };
 };
