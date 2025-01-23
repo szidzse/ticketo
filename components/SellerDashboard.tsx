@@ -13,6 +13,7 @@ import { createStripeConnectLoginLink } from "@/actions/createStripeConnectLogin
 import Spinner from "@/components/Spinner";
 import Link from "next/link";
 import { CalendarDays, Plus } from "lucide-react";
+import { createStripeConnectCustomer } from "@/actions/createStripeConnectCustomer";
 
 const SellerDashboard = () => {
   const [accountCreatePending, setAccountCreatePending] = useState(false);
@@ -110,7 +111,40 @@ const SellerDashboard = () => {
           </>
         )}
 
-        {/*  */}
+        <div className="p-6">
+          {/* Account Creation Section */}
+          {!stripeConnectId && !accountCreatePending && (
+            <div className="text-center py-8">
+              <h3 className="text-xl font-semibold mb-4">
+                Start Accepting Payments
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Create your seller account to start receiving payments securely
+                through Stripe.
+              </p>
+              <button
+                onClick={async () => {
+                  setAccountCreatePending(true);
+                  setError(false);
+                  try {
+                    await createStripeConnectCustomer();
+                    setAccountCreatePending(false);
+                  } catch (error) {
+                    console.error(
+                      "Error creating Stripe Connect customer:",
+                      error,
+                    );
+                    setError(true);
+                    setAccountCreatePending(false);
+                  }
+                }}
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Create Seller Account
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
