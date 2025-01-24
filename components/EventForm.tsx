@@ -2,6 +2,13 @@
 
 import { z } from "zod";
 import { Id } from "@/convex/_generated/dataModel";
+import { useUser } from "@clerk/nextjs";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
+import { useToast } from "@/hooks/use-toast";
+import { useStorageUrl } from "@/lib/utils";
 
 const formSchema = z.object({
   name: z.string().min(1, "Event name is required"),
@@ -35,7 +42,15 @@ interface EventFormProps {
   initialData?: InitialEventData;
 }
 
-const EventForm = () => {
+const EventForm = ({ mode, initialData }: EventFormProps) => {
+  const { user } = useUser();
+  const createEvent = useMutation(api.events.create);
+  const updateEvent = useMutation(api.events.updateEvent);
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const { toast } = useToast();
+  const currentImageUrl = useStorageUrl(initialData?.imageStorageId);
+
   return <div>event form</div>;
 };
 
