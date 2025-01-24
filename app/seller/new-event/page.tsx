@@ -12,7 +12,7 @@ const NewEventPage = () => {
         </div>
 
         <div className="p-6">
-          <EventForm />
+          <EventForm mode="create" />
         </div>
       </div>
     </div>
