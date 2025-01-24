@@ -88,7 +88,87 @@ const EventForm = ({ mode, initialData }: EventFormProps) => {
     },
   });
 
-  const onSubmit = async () => {};
+  const onSubmit = async (values: FormData) => {
+    if (!user?.id) {
+      return;
+    }
+
+    startTransition(async () => {
+      try {
+        let imageStorageId = null;
+
+        // Handle image changes
+        if (selectedImage) {
+          // Upload new image
+          imageStorageId = await handleImageUpload(selectedImage);
+        }
+
+        // Handle image deletion/update in edit mode
+        if (mode === "edit" && initialData?.imageStorageId) {
+          if (removedCurrentImage || selectedImage) {
+            // Delete old image from storage
+            await deleteImage({
+              storageId: initialData.imageStorageId,
+            });
+          }
+        }
+
+        if (mode === "create") {
+          const eventId = await createEvent({
+            ...values,
+            userId: user.id,
+            eventDate: values.eventDate.getTime(),
+          });
+
+          if (imageStorageId) {
+            await updateEventImage({
+              eventId,
+              storageId: imageStorageId as Id<"_storage">,
+            });
+          }
+
+          router.push(`/event/${eventId}`);
+        } else {
+          // Ensure initialData exists before proceeding with update
+          if (!initialData) {
+            throw new Error("Initial event data is required for updates.");
+          }
+
+          // Update event details
+          await updateEvent({
+            eventId: initialData._id,
+            ...values,
+            eventDate: values.eventDate.getTime(),
+          });
+
+          // Update image - this will now handle both adding new image and removing existing image
+          if (imageStorageId || removedCurrentImage) {
+            await updateEventImage({
+              eventId: initialData._id,
+              // If we have a new image, use its ID, otherwise if we're removing the image, pass null
+              storageId: imageStorageId
+                ? (imageStorageId as Id<"_storage">)
+                : null,
+            });
+          }
+
+          toast({
+            title: "Event updated.",
+            description: "Your event has been successfully updated.",
+          });
+
+          router.push(`/event/${initialData._id}`);
+        }
+      } catch (error) {
+        console.error("Failed to handle event: ", error);
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem with your request.",
+        });
+      }
+    });
+  };
 
   async function handleImageUpload(file: File): Promise<string | null> {
     try {
