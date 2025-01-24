@@ -9,6 +9,8 @@ import { useRouter } from "next/navigation";
 import { useRef, useState, useTransition } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useStorageUrl } from "@/lib/utils";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const formSchema = z.object({
   name: z.string().min(1, "Event name is required"),
@@ -60,6 +62,48 @@ const EventForm = ({ mode, initialData }: EventFormProps) => {
   const deleteImage = useMutation(api.storage.deleteImage);
 
   const [removedCurrentImage, setRemovedCurrentImage] = useState(false);
+
+  const form = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: initialData?.name ?? "",
+      description: initialData?.description ?? "",
+      location: initialData?.location ?? "",
+      eventDate: initialData ? new Date(initialData.eventDate) : new Date(),
+      price: initialData?.price ?? 0,
+      totalTickets: initialData?.totalTickets ?? 1,
+    },
+  });
+
+  const onSubmit = async () => {};
+
+  async function handleImageUpload(file: File): Promise<string | null> {
+    try {
+      const postUrl = await generateUploadUrl();
+      const result = await fetch(postUrl, {
+        method: "POST",
+        headers: { "Content-Type": file.type },
+        body: file,
+      });
+      const { storageId } = await result.json();
+      return storageId;
+    } catch (error) {
+      console.error("Failed to upload image: ", error);
+      return null;
+    }
+  }
+
+  const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      setSelectedImage(file);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   return <div>event form</div>;
 };
