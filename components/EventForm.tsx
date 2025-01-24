@@ -1,5 +1,40 @@
 "use client";
 
+import { z } from "zod";
+import { Id } from "@/convex/_generated/dataModel";
+
+const formSchema = z.object({
+  name: z.string().min(1, "Event name is required"),
+  description: z.string().min(1, "Description is required"),
+  location: z.string().min(1, "Location is required"),
+  eventDate: z
+    .date()
+    .min(
+      new Date(new Date().setHours(0, 0, 0, 0)),
+      "Event date must be in the future",
+    ),
+  price: z.number().min(0, "Price must be 0 or greater"),
+  totalTickets: z.number().min(1, "Must have at least 1 ticket"),
+});
+
+type FormData = z.infer<typeof formSchema>;
+
+interface InitialEventData {
+  _id: Id<"events">;
+  name: string;
+  description: string;
+  location: string;
+  eventDate: number;
+  price: number;
+  totalTickets: number;
+  imageStorageId?: Id<"_storage">;
+}
+
+interface EventFormProps {
+  mode: "create" | "edit";
+  initialData?: InitialEventData;
+}
+
 const EventForm = () => {
   return <div>event form</div>;
 };
