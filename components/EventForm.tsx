@@ -6,7 +6,7 @@ import { useUser } from "@clerk/nextjs";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { useRef, useState, useTransition } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useStorageUrl } from "@/lib/utils";
 
@@ -44,12 +44,22 @@ interface EventFormProps {
 
 const EventForm = ({ mode, initialData }: EventFormProps) => {
   const { user } = useUser();
+  const router = useRouter();
   const createEvent = useMutation(api.events.create);
   const updateEvent = useMutation(api.events.updateEvent);
-  const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const { toast } = useToast();
+
+  // Image Upload
   const currentImageUrl = useStorageUrl(initialData?.imageStorageId);
+  const imageInput = useRef<HTMLInputElement>(null);
+  const [selectedImage, setSelectedImage] = useState<File | null>(null);
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const generateUploadUrl = useMutation(api.storage.generateUploadUrl);
+  const updateEventImage = useMutation(api.storage.updateEventImage);
+  const deleteImage = useMutation(api.storage.deleteImage);
+
+  const [removedCurrentImage, setRemovedCurrentImage] = useState(false);
 
   return <div>event form</div>;
 };
