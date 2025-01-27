@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getConvexClient } from "@/lib/convex";
 import { api } from "@/convex/_generated/api";
 import { auth } from "@clerk/nextjs/server";
+import Ticket from "@/components/Ticket";
 
 const TicketSuccess = async () => {
   const { userId } = await auth();
