@@ -1,4 +1,3 @@
-import React from "react";
 import { redirect } from "next/navigation";
 import { getConvexClient } from "@/lib/convex";
 import { api } from "@/convex/_generated/api";
