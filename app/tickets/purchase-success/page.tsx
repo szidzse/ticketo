@@ -30,6 +30,8 @@ const TicketSuccess = async () => {
             Your ticket has been confirmed and is ready to use
           </p>
         </div>
+
+        <Ticket ticketId={latestTicket._id} />
       </div>
     </div>
   );

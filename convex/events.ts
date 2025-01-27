@@ -349,3 +349,27 @@ export const purchaseTicket = mutation({
     }
   },
 });
+
+// This function retrieves a user's tickets along with event data.
+export const getUserTickets = query({
+  args: { userId: v.string() },
+  handler: async (ctx, { userId }) => {
+    const tickets = await ctx.db
+      .query("tickets")
+      .withIndex("by_user", (q) => q.eq("userId", userId))
+      .collect();
+
+    const ticketsWithEvents = await Promise.all(
+      tickets.map(async (ticket) => {
+        const event = await ctx.db.get(ticket.eventId);
+
+        return {
+          ...ticket,
+          event,
+        };
+      }),
+    );
+
+    return ticketsWithEvents;
+  },
+});
