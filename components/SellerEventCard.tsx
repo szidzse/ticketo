@@ -13,6 +13,7 @@ import {
   Ticket,
 } from "lucide-react";
 import Link from "next/link";
+import CancelEventButton from "@/components/CancelEventButton";
 
 const SellerEventCard = ({
   event,
@@ -67,8 +68,7 @@ const SellerEventCard = ({
                       <Edit className="w-4 h-4" />
                       Edit
                     </Link>
-                    {/* TODO: implement cancel event button */}
-                    <button>cancel event</button>
+                    <CancelEventButton eventId={event._id} />
                   </>
                 )}
               </div>
