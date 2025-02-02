@@ -385,7 +385,6 @@ export const search = query({
 
     return events.filter((event) => {
       const searchTermLower = searchTerm.toLowerCase();
-
       return (
         event.name.toLowerCase().includes(searchTermLower) ||
         event.description.toLowerCase().includes(searchTermLower) ||
