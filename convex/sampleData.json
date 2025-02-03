@@ -1,92 +1,92 @@
 [
   {
-    "name": "Elon Musk: Future Vision",
-    "description": "An inspiring talk about technology and humanity's future.",
-    "price": 499.99,
-    "totalTickets": 100,
-    "location": "Silicon Valley Convention Center, California",
-    "eventDate": 1723845600000,
-    "userId": "user_2bFMHkGxZPWVVyJ5QEJQxfsCkxB"
+    "name": "AI and the Future of Work",
+    "description": "A deep dive into how AI is transforming industries and jobs.",
+    "price": 320.50,
+    "totalTickets": 120,
+    "location": "MIT Media Lab, Cambridge",
+    "eventDate": 1704057600000,
+    "userId": "user_3aLPNkBxYRTWWtyK9HRXdmaJyzA"
   },
   {
-    "name": "FIFA World Cup 2026 - Opening Match",
-    "description": "Experience the thrill of the world's biggest soccer event!",
+    "name": "Retro Gaming Expo 2023",
+    "description": "A celebration of classic video games and consoles.",
+    "price": 45.99,
+    "totalTickets": 300,
+    "location": "Tokyo Game Hall, Japan",
+    "eventDate": 1701033600000,
+    "userId": "user_3bMTWmNyXSVVtBN8UINWcjgGpzB"
+  },
+  {
+    "name": "Jazz Nights with Miles Tribute Band",
+    "description": "A mesmerizing night of jazz music honoring Miles Davis.",
+    "price": 88.75,
+    "totalTickets": 85,
+    "location": "Blue Note Jazz Club, New York",
+    "eventDate": 1698451200000,
+    "userId": "user_3cQUNpOzYUWVdzP0VJOVcktHqzC"
+  },
+  {
+    "name": "SpaceX Starship Launch Viewing",
+    "description": "Watch history in the making with the first crewed Starship launch.",
+    "price": 1500.00,
+    "totalTickets": 20,
+    "location": "Boca Chica Launch Site, Texas",
+    "eventDate": 1695532800000,
+    "userId": "user_3dRXQsPzZUXXfBP2WLQWdluIqzD"
+  },
+  {
+    "name": "Eclipse 2025: Totality in Chile",
+    "description": "A breathtaking view of a total solar eclipse from the perfect location.",
     "price": 899.99,
-    "totalTickets": 50,
-    "location": "Estadio Azteca, Mexico City",
-    "eventDate": 1717891200000,
-    "userId": "user_2bFMHkGxZPWVVyJ5QEJQxfsCkxB"
+    "totalTickets": 40,
+    "location": "Atacama Desert, Chile",
+    "eventDate": 1738425600000,
+    "userId": "user_3eTWOrQAaVYYgCQ3XLQXfnvJrzE"
   },
   {
-    "name": "Van Gogh Immersive Experience",
-    "description": "Step into the world of Van Gogh with this immersive art exhibition.",
-    "price": 299.99,
-    "totalTickets": 75,
-    "location": "The Art Center, Amsterdam",
-    "eventDate": 1721788200000,
-    "userId": "user_2dOPKmMyZRXXazL7SGLSzhsEmzD"
+    "name": "Virtual Reality and Gaming Future",
+    "description": "Explore the future of VR in gaming and entertainment.",
+    "price": 199.00,
+    "totalTickets": 250,
+    "location": "CES Tech Pavilion, Las Vegas",
+    "eventDate": 1741209600000,
+    "userId": "user_3fUVNpNyYVWWdzO1VKPWdmuIqzF"
   },
   {
-    "name": "Arctic Monkeys Live",
-    "description": "Join the Arctic Monkeys for an electrifying live performance!",
+    "name": "Coldplay: Music of the Spheres Tour",
+    "description": "Experience Coldplay’s magical performance under the stars.",
+    "price": 275.50,
+    "totalTickets": 80,
+    "location": "Sydney Opera House, Australia",
+    "eventDate": 1739232000000,
+    "userId": "user_3gXWPmOzYWXXfzR3WLQXenuJrzG"
+  },
+  {
+    "name": "HackerCon 2025",
+    "description": "Meet ethical hackers and cybersecurity experts from around the world.",
+    "price": 350.00,
+    "totalTickets": 500,
+    "location": "Berlin Convention Center, Germany",
+    "eventDate": 1743878400000,
+    "userId": "user_3hYWQrQAaUYYgDQ4XLQXfnvJrzH"
+  },
+  {
+    "name": "Venice Carnival Grand Ball",
+    "description": "A luxurious masquerade ball in the heart of Venice.",
+    "price": 1200.00,
+    "totalTickets": 150,
+    "location": "Palazzo Pisani Moretta, Venice",
+    "eventDate": 1746556800000,
+    "userId": "user_3iZWRmNyXWWVtEN5UINWcjiGpzI"
+  },
+  {
+    "name": "Comic Con International",
+    "description": "The world’s biggest pop culture convention featuring celebrities, comics, and movies.",
     "price": 150.00,
-    "totalTickets": 200,
-    "location": "O2 Arena, London",
-    "eventDate": 1726012800000,
-    "userId": "user_2dOPKmMyZRXXazL7SGLSzhsEmzD"
-  },
-  {
-    "name": "Game Dev Con 2024",
-    "description": "The ultimate convention for game developers and enthusiasts!",
-    "price": 85.00,
     "totalTickets": 1000,
     "location": "San Diego Convention Center, California",
-    "eventDate": 1728172800000,
-    "userId": "user_2dOPKmMyZRXXazL7SGLSzhsEmzD"
-  },
-  {
-    "name": "Billie Eilish: World Tour",
-    "description": "An intimate performance with Billie Eilish on her world tour.",
-    "price": 125.00,
-    "totalTickets": 150,
-    "location": "Barclays Center, New York",
-    "eventDate": 1729382400000,
-    "userId": "user_2eRTLnPxYQWWbzM8THMTaisFnzE"
-  },
-  {
-    "name": "Formula 1 Grand Prix - Silverstone",
-    "description": "Witness high-speed racing at the iconic Silverstone circuit.",
-    "price": 199.99,
-    "totalTickets": 60,
-    "location": "Silverstone Circuit, Northamptonshire",
-    "eventDate": 1722393600000,
-    "userId": "user_2fQUMpNzXSVVczN9UINUbjsGozF"
-  },
-  {
-    "name": "Cirque du Soleil: Mystère",
-    "description": "A breathtaking acrobatic show that defies gravity and logic.",
-    "price": 450.00,
-    "totalTickets": 80,
-    "location": "Treasure Island Hotel, Las Vegas",
-    "eventDate": 1724985600000,
-    "userId": "user_2gPVNqOyYTWWdzO0VJOVcktHpzG"
-  },
-  {
-    "name": "The Royal Opera: La Traviata",
-    "description": "A stunning performance of one of the world's most beloved operas.",
-    "price": 750.00,
-    "totalTickets": 40,
-    "location": "Royal Opera House, London",
-    "eventDate": 1720578600000,
-    "userId": "user_2hQWOrPzZUXXezP1WKPWdluIqzH"
-  },
-  {
-    "name": "Shakespeare's Globe: Macbeth",
-    "description": "A powerful and chilling performance of Shakespeare's tragedy.",
-    "price": 175.00,
-    "totalTickets": 100,
-    "location": "Globe Theatre, London",
-    "eventDate": 1727222400000,
-    "userId": "user_2iRXPsQAaVYYfAQ2XLQXemvJrzI"
+    "eventDate": 1749244800000,
+    "userId": "user_3jAXPsQAaVYYfEQ6XLQXemvJrzJ"
   }
 ]
