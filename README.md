@@ -33,7 +33,7 @@ It was built with Next.js, Typescript, Convex Backend-as-a-Service, Clerk Authen
 ![ticketo-event-offer](https://github.com/user-attachments/assets/e12db0f4-efc0-4cd8-8ea2-3cbd5183af4f)
 
 ### Ticket Purchase
-![ticketo-ticket-purchase](https://github.com/user-attachments/assets/a3308c06-4782-4068-965f-4030d2492ca7)
+![ticketo-ticket-purchase2](https://github.com/user-attachments/assets/e7008032-3099-406c-ab70-34e1d98f78c4)
 
 ### My Tickets
 ![ticketo-my-tickets](https://github.com/user-attachments/assets/24c2599a-4393-4846-9665-5f8a5de935eb)
