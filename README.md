@@ -23,6 +23,28 @@ It was built with Next.js, Typescript, Convex Backend-as-a-Service, Clerk Authen
 
 # Demo Images
 
+### Main Page 
+![ticketo-home-page](https://github.com/user-attachments/assets/320cfa19-e7a6-436c-819a-5e3031aa7fed)
+
+### Event Card
+![ticketo-event-card](https://github.com/user-attachments/assets/5d85cb6b-4dd1-4bc3-aea1-f1a2a09ef324)
+
+### Event Card with Offer
+![ticketo-event-offer](https://github.com/user-attachments/assets/e12db0f4-efc0-4cd8-8ea2-3cbd5183af4f)
+
+### Ticket Purchase
+![ticketo-ticket-purchase](https://github.com/user-attachments/assets/a3308c06-4782-4068-965f-4030d2492ca7)
+
+### My Tickets
+![ticketo-my-tickets](https://github.com/user-attachments/assets/24c2599a-4393-4846-9665-5f8a5de935eb)
+
+### My Events
+![ticketo-my-events](https://github.com/user-attachments/assets/474c4e1c-be21-44d2-9ab6-1df576d993cb)
+
+### Event Create and Edit
+![ticketo-create-event](https://github.com/user-attachments/assets/cfe25950-1c6e-431d-a07f-f74a03165fa6)
+![ticketo-edit-event](https://github.com/user-attachments/assets/34acd883-33bd-431a-bcaf-124923ed0783)
+
 # Technical Features
 
 - Real-time updates using Convex Backend-as-a-Service
@@ -105,12 +127,19 @@ Create an .env.local file with the following key-value pairs:
 1. Create a Convex account if you haven't already
 2. Create a new project in the Convex Dashboard
 3. Install the Convex CLI:
+   
     >npm install convex
-4. Initialize Convex in your project:
+    
+5. Initialize Convex in your project:
+   
     >npx convex init
-5. Copy your deployment URL from the Convex dashboard and add it to your .env.local:
+    
+6. Copy your deployment URL from the Convex dashboard and add it to your .env.local:
+   
     >NEXT_PUBLIC_CONVEX_URL=your_deployment_url
-6. Start the Convex development server:
+    
+7. Start the Convex development server:
+   
     >npx convex dev
 
 #### Keep the Convex development server running while working on your project. It will sync your backend functions and database schema automatically.
@@ -135,10 +164,15 @@ Create an .env.local file with the following key-value pairs:
 Installing the Stripe CLI is useful because it facilitates the testing of Stripe integration and the development process. One of the main features of the Stripe CLI is that it helps you to receive webhook events in the local development environment.
 
 1. Install the Stripe CLI and login. You can read the instructions here:
+   
     >https://docs.stripe.com/stripe-cli
-2. Start webhook forwarding:
+    
+3. Start webhook forwarding:
+   
     >stripe listen --forward-to localhost:3000/api/webhooks/stripe
-3. Copy the webhook signing secret that is displayed after running the listen command and add it to your .env.local:
+    
+5. Copy the webhook signing secret that is displayed after running the listen command and add it to your .env.local:
+   
     >STRIPE_WEBHOOK_SECRET=your_webhook_signing_secret
 
 #### Make sure your webhook endpoint (/api/webhooks/stripe) is properly configured to handle incoming webhook events.
