@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Ban } from "lucide-react";
+import { refundEventTickets } from "@/actions/refundEventTickets";
 
 const CancelEventButton = ({ eventId }: { eventId: Id<"events"> }) => {
   const [isCancelling, setIsCancelling] = useState(false);
