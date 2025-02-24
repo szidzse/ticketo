@@ -1,4 +1,4 @@
-import { query } from "@/convex/_generated/server";
+import { mutation, query } from "@/convex/_generated/server";
 import { v } from "convex/values";
 
 // Finds a user's ticket to an event.
@@ -32,5 +32,39 @@ export const getTicketWithDetails = query({
       ...ticket,
       event,
     };
+  },
+});
+
+/**
+ * Retrieves all valid or used tickets for a specific event.
+ */
+export const getValidTicketsForEvent = query({
+  args: { eventId: v.id("events") },
+  handler: async (ctx, { eventId }) => {
+    return await ctx.db
+      .query("tickets")
+      .withIndex("by_event", (q) => q.eq("eventId", eventId))
+      .filter((q) =>
+        q.or(q.eq(q.field("status"), "valid"), q.eq(q.field("status"), "used")),
+      )
+      .collect();
+  },
+});
+
+/**
+ * Updates the status of the ticket.
+ */
+export const updateTicketStatus = mutation({
+  args: {
+    ticketId: v.id("tickets"),
+    status: v.union(
+      v.literal("valid"),
+      v.literal("used"),
+      v.literal("refunded"),
+      v.literal("cancelled"),
+    ),
+  },
+  handler: async (ctx, { ticketId, status }) => {
+    await ctx.db.patch(ticketId, { status });
   },
 });
