@@ -1,75 +1,39 @@
 [
   {
-    "name": "AI and the Future of Work",
-    "description": "A deep dive into how AI is transforming industries and jobs.",
-    "price": 320.50,
-    "totalTickets": 120,
-    "location": "MIT Media Lab, Cambridge",
-    "eventDate": 1704057600000,
-    "userId": "user_3aLPNkBxYRTWWtyK9HRXdmaJyzA"
+    "name": "Quantum Computing Summit 2025",
+    "description": "Exploring the breakthroughs and applications of quantum computing.",
+    "price": 500.00,
+    "totalTickets": 200,
+    "location": "Stanford University, California",
+    "eventDate": 1749936000000,
+    "userId": "user_4aLPNkBxYRTWWtyK9HRXdmaJyzA"
   },
   {
-    "name": "Retro Gaming Expo 2023",
-    "description": "A celebration of classic video games and consoles.",
-    "price": 45.99,
-    "totalTickets": 300,
-    "location": "Tokyo Game Hall, Japan",
-    "eventDate": 1701033600000,
-    "userId": "user_3bMTWmNyXSVVtBN8UINWcjgGpzB"
+    "name": "European Space Conference",
+    "description": "A deep dive into Europe's role in space exploration and innovation.",
+    "price": 275.99,
+    "totalTickets": 350,
+    "location": "ESA Headquarters, Paris",
+    "eventDate": 1748371200000,
+    "userId": "user_4bMTWmNyXSVVtBN8UINWcjgGpzB"
   },
   {
-    "name": "Jazz Nights with Miles Tribute Band",
-    "description": "A mesmerizing night of jazz music honoring Miles Davis.",
-    "price": 88.75,
-    "totalTickets": 85,
-    "location": "Blue Note Jazz Club, New York",
-    "eventDate": 1698451200000,
-    "userId": "user_3cQUNpOzYUWVdzP0VJOVcktHqzC"
-  },
-  {
-    "name": "SpaceX Starship Launch Viewing",
-    "description": "Watch history in the making with the first crewed Starship launch.",
-    "price": 1500.00,
-    "totalTickets": 20,
-    "location": "Boca Chica Launch Site, Texas",
-    "eventDate": 1695532800000,
-    "userId": "user_3dRXQsPzZUXXfBP2WLQWdluIqzD"
-  },
-  {
-    "name": "Eclipse 2025: Totality in Chile",
-    "description": "A breathtaking view of a total solar eclipse from the perfect location.",
-    "price": 899.99,
-    "totalTickets": 40,
-    "location": "Atacama Desert, Chile",
-    "eventDate": 1738425600000,
-    "userId": "user_3eTWOrQAaVYYgCQ3XLQXfnvJrzE"
-  },
-  {
-    "name": "Virtual Reality and Gaming Future",
-    "description": "Explore the future of VR in gaming and entertainment.",
+    "name": "AI for Healthcare Symposium",
+    "description": "Discussing the future of AI in diagnostics, treatment, and patient care.",
     "price": 199.00,
     "totalTickets": 250,
-    "location": "CES Tech Pavilion, Las Vegas",
-    "eventDate": 1741209600000,
-    "userId": "user_3fUVNpNyYVWWdzO1VKPWdmuIqzF"
+    "location": "Johns Hopkins Hospital, Baltimore",
+    "eventDate": 1737321600000,
+    "userId": "user_4cQUNpOzYUWVdzP0VJOVcktHqzC"
   },
   {
-    "name": "Coldplay: Music of the Spheres Tour",
-    "description": "Experience Coldplay’s magical performance under the stars.",
-    "price": 275.50,
-    "totalTickets": 80,
-    "location": "Sydney Opera House, Australia",
-    "eventDate": 1739232000000,
-    "userId": "user_3gXWPmOzYWXXfzR3WLQXenuJrzG"
-  },
-  {
-    "name": "HackerCon 2025",
-    "description": "Meet ethical hackers and cybersecurity experts from around the world.",
-    "price": 350.00,
-    "totalTickets": 500,
-    "location": "Berlin Convention Center, Germany",
-    "eventDate": 1743878400000,
-    "userId": "user_3hYWQrQAaUYYgDQ4XLQXfnvJrzH"
+    "name": "Ancient Wonders Photography Tour",
+    "description": "A guided tour capturing the breathtaking ancient sites of the world.",
+    "price": 950.00,
+    "totalTickets": 50,
+    "location": "Petra, Jordan",
+    "eventDate": 1745001600000,
+    "userId": "user_4dRXQsPzZUXXfBP2WLQWdluIqzD"
   },
   {
     "name": "Venice Carnival Grand Ball",
@@ -81,12 +45,48 @@
     "userId": "user_3iZWRmNyXWWVtEN5UINWcjiGpzI"
   },
   {
-    "name": "Comic Con International",
-    "description": "The world’s biggest pop culture convention featuring celebrities, comics, and movies.",
+    "name": "Lunar Eclipse Stargazing Night",
+    "description": "A special event to witness a breathtaking lunar eclipse with experts.",
+    "price": 60.00,
+    "totalTickets": 100,
+    "location": "Mauna Kea Observatory, Hawaii",
+    "eventDate": 1734979200000,
+    "userId": "user_4eTWOrQAaVYYgCQ3XLQXfnvJrzE"
+  },
+  {
+    "name": "Cybersecurity & Ethical Hacking Bootcamp",
+    "description": "Learn from the best in the industry about cybersecurity threats and defenses.",
+    "price": 400.00,
+    "totalTickets": 300,
+    "location": "DEF CON, Las Vegas",
+    "eventDate": 1747689600000,
+    "userId": "user_4fUVNpNyYVWWdzO1VKPWdmuIqzF"
+  },
+  {
+    "name": "Tesla AI Day 2023",
+    "description": "An exclusive look at Tesla's latest AI-driven technologies and innovations.",
     "price": 150.00,
-    "totalTickets": 1000,
-    "location": "San Diego Convention Center, California",
-    "eventDate": 1749244800000,
-    "userId": "user_3jAXPsQAaVYYfEQ6XLQXemvJrzJ"
+    "totalTickets": 500,
+    "location": "Tesla HQ, Palo Alto",
+    "eventDate": 1699910400000,
+    "userId": "user_4gXWPmOzYWXXfzR3WLQXenuJrzG"
+  },
+  {
+    "name": "Olympic Games Opening Ceremony",
+    "description": "Experience the spectacular opening ceremony of the Summer Olympics.",
+    "price": 750.00,
+    "totalTickets": 200,
+    "location": "Paris, France",
+    "eventDate": 1743542400000,
+    "userId": "user_4hYWQrQAaUYYgDQ4XLQXfnvJrzH"
+  },
+  {
+    "name": "Formula 1 Grand Prix - Monaco",
+    "description": "Witness the excitement of Formula 1 racing in the streets of Monaco.",
+    "price": 1800.00,
+    "totalTickets": 300,
+    "location": "Monte Carlo, Monaco",
+    "eventDate": 1689648000000,
+    "userId": "user_4jAXPsQAaVYYfEQ6XLQXemvJrzJ"
   }
 ]
