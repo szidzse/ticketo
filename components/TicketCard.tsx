@@ -109,7 +109,7 @@ const TicketCard = ({ ticketId }: { ticketId: Id<"tickets"> }) => {
                   : "text-blue-600"
             }`}
           >
-            £{ticket.event.price.toFixed(2)}
+            €{ticket.event.price.toFixed(2)}
           </span>
           <span className="text-gray-600 flex items-center">
             View Ticket <ArrowRight className="w-4 h-4 ml-1" />

@@ -1,68 +1,5 @@
 [
   {
-    "name": "Quantum Computing Summit 2025",
-    "description": "Exploring the breakthroughs and applications of quantum computing.",
-    "price": 500.00,
-    "totalTickets": 200,
-    "location": "Stanford University, California",
-    "eventDate": 1749936000000,
-    "userId": "user_4aLPNkBxYRTWWtyK9HRXdmaJyzA"
-  },
-  {
-    "name": "European Space Conference",
-    "description": "A deep dive into Europe's role in space exploration and innovation.",
-    "price": 275.99,
-    "totalTickets": 350,
-    "location": "ESA Headquarters, Paris",
-    "eventDate": 1748371200000,
-    "userId": "user_4bMTWmNyXSVVtBN8UINWcjgGpzB"
-  },
-  {
-    "name": "AI for Healthcare Symposium",
-    "description": "Discussing the future of AI in diagnostics, treatment, and patient care.",
-    "price": 199.00,
-    "totalTickets": 250,
-    "location": "Johns Hopkins Hospital, Baltimore",
-    "eventDate": 1737321600000,
-    "userId": "user_4cQUNpOzYUWVdzP0VJOVcktHqzC"
-  },
-  {
-    "name": "Ancient Wonders Photography Tour",
-    "description": "A guided tour capturing the breathtaking ancient sites of the world.",
-    "price": 950.00,
-    "totalTickets": 50,
-    "location": "Petra, Jordan",
-    "eventDate": 1745001600000,
-    "userId": "user_4dRXQsPzZUXXfBP2WLQWdluIqzD"
-  },
-  {
-    "name": "Venice Carnival Grand Ball",
-    "description": "A luxurious masquerade ball in the heart of Venice.",
-    "price": 1200.00,
-    "totalTickets": 150,
-    "location": "Palazzo Pisani Moretta, Venice",
-    "eventDate": 1746556800000,
-    "userId": "user_3iZWRmNyXWWVtEN5UINWcjiGpzI"
-  },
-  {
-    "name": "Lunar Eclipse Stargazing Night",
-    "description": "A special event to witness a breathtaking lunar eclipse with experts.",
-    "price": 60.00,
-    "totalTickets": 100,
-    "location": "Mauna Kea Observatory, Hawaii",
-    "eventDate": 1734979200000,
-    "userId": "user_4eTWOrQAaVYYgCQ3XLQXfnvJrzE"
-  },
-  {
-    "name": "Cybersecurity & Ethical Hacking Bootcamp",
-    "description": "Learn from the best in the industry about cybersecurity threats and defenses.",
-    "price": 400.00,
-    "totalTickets": 300,
-    "location": "DEF CON, Las Vegas",
-    "eventDate": 1747689600000,
-    "userId": "user_4fUVNpNyYVWWdzO1VKPWdmuIqzF"
-  },
-  {
     "name": "Tesla AI Day 2023",
     "description": "An exclusive look at Tesla's latest AI-driven technologies and innovations.",
     "price": 150.00,
@@ -72,15 +9,6 @@
     "userId": "user_4gXWPmOzYWXXfzR3WLQXenuJrzG"
   },
   {
-    "name": "Olympic Games Opening Ceremony",
-    "description": "Experience the spectacular opening ceremony of the Summer Olympics.",
-    "price": 750.00,
-    "totalTickets": 200,
-    "location": "Paris, France",
-    "eventDate": 1743542400000,
-    "userId": "user_4hYWQrQAaUYYgDQ4XLQXfnvJrzH"
-  },
-  {
     "name": "Formula 1 Grand Prix - Monaco",
     "description": "Witness the excitement of Formula 1 racing in the streets of Monaco.",
     "price": 1800.00,
@@ -88,5 +16,77 @@
     "location": "Monte Carlo, Monaco",
     "eventDate": 1689648000000,
     "userId": "user_4jAXPsQAaVYYfEQ6XLQXemvJrzJ"
+  },
+  {
+    "name": "AI for Healthcare Symposium",
+    "description": "Discussing the future of AI in diagnostics, treatment, and patient care.",
+    "price": 199.00,
+    "totalTickets": 250,
+    "location": "Johns Hopkins Hospital, Baltimore",
+    "eventDate": 1750963200000,
+    "userId": "user_4cQUNpOzYUWVdzP0VJOVcktHqzC"
+  },
+  {
+    "name": "Cybersecurity & Ethical Hacking Bootcamp",
+    "description": "Learn from the best in the industry about cybersecurity threats and defenses.",
+    "price": 400.00,
+    "totalTickets": 300,
+    "location": "DEF CON, Las Vegas",
+    "eventDate": 1752163200000,
+    "userId": "user_4fUVNpNyYVWWdzO1VKPWdmuIqzF"
+  },
+  {
+    "name": "European Space Conference",
+    "description": "A deep dive into Europe's role in space exploration and innovation.",
+    "price": 275.99,
+    "totalTickets": 350,
+    "location": "ESA Headquarters, Paris",
+    "eventDate": 1753382400000,
+    "userId": "user_4bMTWmNyXSVVtBN8UINWcjgGpzB"
+  },
+  {
+    "name": "Quantum Computing Summit 2025",
+    "description": "Exploring the breakthroughs and applications of quantum computing.",
+    "price": 500.00,
+    "totalTickets": 200,
+    "location": "Stanford University, California",
+    "eventDate": 1754246400000,
+    "userId": "user_4aLPNkBxYRTWWtyK9HRXdmaJyzA"
+  },
+  {
+    "name": "Olympic Games Opening Ceremony",
+    "description": "Experience the spectacular opening ceremony of the Summer Olympics.",
+    "price": 750.00,
+    "totalTickets": 200,
+    "location": "Paris, France",
+    "eventDate": 1755120000000,
+    "userId": "user_4hYWQrQAaUYYgDQ4XLQXfnvJrzH"
+  },
+  {
+    "name": "Ancient Wonders Photography Tour",
+    "description": "A guided tour capturing the breathtaking ancient sites of the world.",
+    "price": 950.00,
+    "totalTickets": 50,
+    "location": "Petra, Jordan",
+    "eventDate": 1756483200000,
+    "userId": "user_4dRXQsPzZUXXfBP2WLQWdluIqzD"
+  },
+  {
+    "name": "Venice Carnival Grand Ball",
+    "description": "A luxurious masquerade ball in the heart of Venice.",
+    "price": 1200.00,
+    "totalTickets": 150,
+    "location": "Palazzo Pisani Moretta, Venice",
+    "eventDate": 1757433600000,
+    "userId": "user_3iZWRmNyXWWVtEN5UINWcjiGpzI"
+  },
+  {
+    "name": "Lunar Eclipse Stargazing Night",
+    "description": "A special event to witness a breathtaking lunar eclipse with experts.",
+    "price": 60.00,
+    "totalTickets": 100,
+    "location": "Mauna Kea Observatory, Hawaii",
+    "eventDate": 1758537600000,
+    "userId": "user_4eTWOrQAaVYYgCQ3XLQXfnvJrzE"
   }
 ]
